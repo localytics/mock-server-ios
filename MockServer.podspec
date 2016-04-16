@@ -9,32 +9,29 @@
 Pod::Spec.new do |s|
   s.name             = "MockServer"
   s.version          = "0.1.0"
-  s.summary          = "A short description of MockServer."
+  s.summary          = "An embedded server that captures app web traffic for validation."
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+s.description  = <<-DESC
+                  MockServer is an HTTP server that can be embedded inside an application. It
+                  captures all traffic sent to it, allowing each payload to be inspected for correctness.
+                  A primary use case is redirecting the apps traffic to MockServer during tests. This
+                  allows the network requests to be validated, and allows the real server to be mocked out
+                  for testing.
+                   DESC
 
-  s.description      = <<-DESC
-                       DESC
+  s.homepage     = "http://www.localytics.com"
+  
+  s.license      = "MIT (example)"
+  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/MockServer"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license          = 'MIT'
-  s.author           = { "Matthew Patey" => "mpatey@localytics.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/MockServer.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.author           = { "Char Software, Inc. d/b/a Localytics" => "support@localytics.com" }
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'MockServer/Classes/**/*'
-  s.resource_bundles = {
-    'MockServer' => ['MockServer/Assets/*.png']
-  }
+  # s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/MockServer.git", :tag => s.version.to_s }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files = 'MockServer/Classes/**/*'
+  s.public_header_files = "MockServer/Classes/LLMockServer.h", "MockServer/Classes/HTTPMessage+Parsing.h"
+
+  s.user_target_xcconfig = { "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES" }
+  s.dependency "CocoaHTTPServer", "~> 2.3"
 end
