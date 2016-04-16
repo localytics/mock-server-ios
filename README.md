@@ -1,6 +1,5 @@
 # MockServer
 
-[![CI Status](http://img.shields.io/travis/Matthew Patey/MockServer.svg?style=flat)](https://travis-ci.org/Matthew Patey/MockServer)
 [![Version](https://img.shields.io/cocoapods/v/MockServer.svg?style=flat)](http://cocoapods.org/pods/MockServer)
 [![License](https://img.shields.io/cocoapods/l/MockServer.svg?style=flat)](http://cocoapods.org/pods/MockServer)
 [![Platform](https://img.shields.io/cocoapods/p/MockServer.svg?style=flat)](http://cocoapods.org/pods/MockServer)
@@ -22,7 +21,7 @@ pod "MockServer"
 
 ## Author
 
-Matthew Patey, mpatey@localytics.com
+Char Software, Inc. d/b/a Localytics, support@localytics.com
 
 ## License
 
