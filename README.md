@@ -25,4 +25,4 @@ Char Software, Inc. d/b/a Localytics, support@localytics.com
 
 ## License
 
-MockServer is available under the MIT license. See the LICENSE file for more info.
+MockServer is available under the Localytics Modified BSD License. See the LICENSE file for more info.

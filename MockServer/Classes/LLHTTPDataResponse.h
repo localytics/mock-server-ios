@@ -1,9 +1,12 @@
 //
 //  LLHTTPDataResponse.h
-//  Localytics
+//  Copyright (C) 2016 Char Software Inc., DBA Localytics
 //
-//  Created by mpatey on 10/21/15.
-//  Copyright © 2015 Localytics. All rights reserved.
+//  This code is provided under the Localytics Modified BSD License.
+//  A copy of this license has been distributed in a file called LICENSE
+//  with this source code.
+//
+// Please visit www.localytics.com for more information.
 //
 
 #import "HTTPDataResponse.h"
