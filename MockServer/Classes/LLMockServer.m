@@ -1,8 +1,8 @@
 //
 //  LLMockServer.m
-//  Copyright (C) 2016 Char Software Inc., DBA Localytics
+//  Copyright (C) 2016 Localytics
 //
-//  This code is provided under the Localytics Modified BSD License.
+//  This code is provided under the The MIT License (MIT).
 //  A copy of this license has been distributed in a file called LICENSE
 //  with this source code.
 //
