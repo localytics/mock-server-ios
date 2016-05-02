@@ -11,9 +11,9 @@
 
 #import "HTTPMessage.h"
 
-@interface HTTPMessage (Parsing)
+@interface HTTPMessage (LLParsing)
 
-- (NSString *)bodyString;
-- (id)bodyJsonWithError:(NSError **)error;
+- (NSString *)ll_bodyString;
+- (id)ll_bodyJsonWithError:(NSError **)error;
 
 @end

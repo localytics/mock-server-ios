@@ -57,6 +57,10 @@ static NSString *const  LOCALHOST = @"localhost";
     return [self.server listeningPort];
 }
 
+- (NSString *)authority {
+    return [NSString stringWithFormat:@"%@:%lu", self.host, (unsigned long) self.port];
+}
+
 - (HTTPMessage *)getNextRequest {
     [self.queueCondition lock];
     

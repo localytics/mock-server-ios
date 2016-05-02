@@ -11,14 +11,14 @@
 
 #import "HTTPMessage+Parsing.h"
 
-@implementation HTTPMessage (Parsing)
+@implementation HTTPMessage (LLParsing)
 
-- (NSString *)bodyString {
+- (NSString *)ll_bodyString {
     NSData *body = [self body];
     return [[NSString alloc] initWithData:body encoding:NSUTF8StringEncoding];
 }
 
-- (id)bodyJsonWithError:(NSError **)error {
+- (id)ll_bodyJsonWithError:(NSError **)error {
     NSData *body = [self body];
     return [NSJSONSerialization JSONObjectWithData:body
                                            options:0

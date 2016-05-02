@@ -18,6 +18,7 @@
 
 @property (nonatomic, readonly, assign) NSUInteger port;
 @property (nonatomic, readonly) NSString *host;
+@property (nonatomic, readonly) NSString *authority;
 
 - (BOOL)startServer;
 - (HTTPMessage *)getNextRequest;
