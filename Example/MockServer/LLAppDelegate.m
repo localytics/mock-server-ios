@@ -11,13 +11,11 @@
 
 #import "LLAppDelegate.h"
 
-@import MockServer;
 
 @implementation LLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    LLMockServer *mock = [LLMockServer new];
     // Override point for customization after application launch.
     return YES;
 }

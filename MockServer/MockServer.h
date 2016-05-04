@@ -9,5 +9,5 @@
 // Please visit www.localytics.com for more information.
 //
 
-#import <MockServer/LLMockServer.h>
-#import <MockServer/HTTPMessage+Parsing.h>
+#import "LLMockServer.h"
+#import "HTTPMessage+Parsing.h"
