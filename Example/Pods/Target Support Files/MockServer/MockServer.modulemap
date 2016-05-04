@@ -1,6 +1,0 @@
-framework module MockServer {
-  umbrella header "MockServer-umbrella.h"
-
-  export *
-  module * { export * }
-}
