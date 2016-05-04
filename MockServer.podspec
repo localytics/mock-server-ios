@@ -26,7 +26,7 @@ s.description  = <<-DESC
   s.author           = { "Char Software, Inc. d/b/a Localytics" => "support@localytics.com" }
   s.ios.deployment_target = '8.0'
 
-  s.source           = { :git => "https://github.com/localytics/mock-server-ios", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/localytics/mock-server-ios.git", :tag => s.version.to_s }
 
   s.source_files = 'MockServer/Classes/**/*'
   s.public_header_files = "MockServer/Classes/LLMockServer.h", "MockServer/Classes/HTTPMessage+Parsing.h"
