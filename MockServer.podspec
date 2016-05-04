@@ -29,7 +29,7 @@ s.description  = <<-DESC
   s.source           = { :git => "https://github.com/localytics/mock-server-ios.git", :tag => s.version.to_s }
 
   s.source_files = 'MockServer/Classes/**/*'
-  s.public_header_files = "MockServer/Classes/LLMockServer.h", "MockServer/Classes/HTTPMessage+Parsing.h"
+  s.public_header_files = "MockServer/MockServer.h" "MockServer/Classes/LLMockServer.h", "MockServer/Classes/HTTPMessage+Parsing.h"
 
   s.user_target_xcconfig = { "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES" }
   s.dependency "CocoaHTTPServer", "~> 2.3"
