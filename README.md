@@ -11,7 +11,8 @@ MockServer is an HTTP Server that captures all requests it receives. Its primary
 To run the example project, clone the repo, and run `pod install` from the Example directory first. Open the `MockServer.xcworkspace`. Select the `MockServer-Example` target and run unit tests. The usage of mock server is shown below. For more detailed examples check out the tests in the `MockServerTests` class. Note that MockServer only supports `http` requests, so `ATS` exceptions must be enabled on iOS 9 and greater
 
 ```objc
-@import MockServer;
+@import MockServer; // if using frameworks
+#import <MockServer/MockServer.h> // if not using frameworks
 
 // ...
 
