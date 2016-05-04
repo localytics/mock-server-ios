@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/MockServer.svg?style=flat)](http://cocoapods.org/pods/MockServer)
 [![Platform](https://img.shields.io/cocoapods/p/MockServer.svg?style=flat)](http://cocoapods.org/pods/MockServer)
 
-MockServer is an HTTP Server that captures all requests it receives. It's primary use case is being embedded in a test app and capturing network traffic from your application for validation. In particular, if you consider one of the primary outputs of a product to be its network requests, MockServer can be used to black-box test the product. This can also be useful in a unit testing environment if you want to test a piece of network code while still using a real HTTP stack. As a real HTTP server, this tool also has a lot of potential around returning stub data to the product being tested.
+MockServer is an HTTP Server that captures all requests it receives. Its primary use case is being embedded in a test app and capturing network traffic from your application for validation. In particular, if you consider one of the primary outputs of a product to be its network requests, MockServer can be used to black-box test the product. This can also be useful in a unit testing environment if you want to test a piece of network code while still using a real HTTP stack. As a real HTTP server, this tool also has a lot of potential around returning stub data to the product being tested.
 
 ## Usage
 
@@ -44,7 +44,7 @@ pod "MockServer"
 
 ## Next Steps
 
-This project has minimal functionality, so any feedback on desired additional features or improvements to the current product are welcome. Pull requests are welcome.
+There is a lot of room for growth in the functionality this project offers, so any feedback on additional features or improvements to the current product are appreciated. Pull requests are welcome.
 
 ## Author
 
