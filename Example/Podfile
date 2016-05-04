@@ -7,6 +7,4 @@ end
 
 target 'MockServer_Tests', :exclusive => true do
   pod 'MockServer', :path => '../'
-
-  
 end
